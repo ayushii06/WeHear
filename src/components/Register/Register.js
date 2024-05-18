@@ -10,33 +10,28 @@ function Register() {
   function handleClick(){
     navigate('/login')
   }
-    const [credentials, setCredentials] = useState({ name: "", email: "",mobile:"", password: "" });
+    const [credentials, setCredentials] = useState({ name: "", email: "",age:"", gender: "",password:"" });
     const onChange = (e) => {
         setCredentials({ ...credentials, [e.target.name]: e.target.value })
     }
   const handleSubmit = async(e)=>{
     e.preventDefault();
-    const response = await fetch("http://localhost:5050/api/shico/user/signup", {
+    const response = await fetch("http://localhost:5050/api/v1/user/signup", {
             method: "POST",
             headers: {
                 "Content-Type": "application/json",
             },
-            body: JSON.stringify({ name: credentials.name, email: credentials.email,mobile: credentials.mobile, password: credentials.password }),
+            body: JSON.stringify({ name: credentials.name, email: credentials.email, age: credentials.age, gender: credentials.gender,password: credentials.password }),
 
         });
         const json = await response.json();
         console.log(json)
         if (json.success) {
-            //Save the auth taken and redirect
-            // localStorage.setItem('token', json.authtoken)
-            navigate("/login")
-
+          navigate("/login")
         }
         else {
             alert(json.error, "Invalid Credentials")
         }
-
-
   }
   return (
     
@@ -44,7 +39,7 @@ function Register() {
       <h1 className="login-heading">Hi, Register here!</h1>
          <div className="flex column container login-container">
        
-        <form onSubmit={handleSubmit}>
+        <form >
            <div className="form-group">
             <label>Name</label>
                 <input type="text" id="name" className='form-control' value={credentials.name} onChange={onChange} name="name" placeholder="Enter your name"/>
@@ -55,21 +50,24 @@ function Register() {
             </div>
             <div className="form-group">
             <label>Age</label>
-                <input type="number" id="number" className='form-control' value={credentials.mobile} onChange={onChange} name="mobile" placeholder="Enter your age"/>
+                <input type="number" id="name" className='form-control' value={credentials.age} onChange={onChange} name="age" placeholder="Enter your age"/>
             </div>
             
             <div className="form-group">
             <label>Gender</label>
-                <input type="password" id="password" className='form-control' value={credentials.password} onChange={onChange} name="password" placeholder="Enter your gender"/>
+                <input type="string" id="name" className='form-control' value={credentials.gender} onChange={onChange} name="gender" placeholder="Enter your gender"/>
             </div>
-          
+            <div className="form-group">
+            <label>Password</label>
+                <input type="password" id="name" className='form-control' value={credentials.password} onChange={onChange} name="password" placeholder="Enter your password"/>
+            </div>
           
         </form>
 
       
     </div>
     <div className="footer">
-    <button className="text-center btns font-bold" to="/register" role="button">Submit</button> 
+    <button onClick={handleSubmit} className="text-center btns font-bold" to="/login" role="button">Submit</button> 
     <p style={{margin:"6vh auto 14vh",
     fontSize: "22px"}} className="text-center font-light">Already have an account?<span className='login-link font-bold' onClick={handleClick}>Log In</span></p>
     </div>

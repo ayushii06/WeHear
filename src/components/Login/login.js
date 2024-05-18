@@ -14,7 +14,7 @@ const Login=()=> {
   }
   const handleSubmit = async (e) => {
       e.preventDefault();
-      const response = await fetch("http://localhost:5050/api/shico/user/login", {
+      const response = await fetch("http://localhost:5050/api/v1/user/login", {
           method: "POST",
           headers: {
               "Content-Type": "application/json",
@@ -31,9 +31,8 @@ const Login=()=> {
           localStorage.setItem('token', json.token)
           localStorage.setItem('name', json.user.name)
           localStorage.setItem('email', json.user.email)
-          localStorage.setItem('password', json.user.password)
-          localStorage.setItem('mobile', json.user.mobile)
-          console.log(json.token)
+        //   localStorage.setItem('password', json.user.password)
+        //   localStorage.setItem('mobile', json.user.mobile)
           navigate("/")
 
 
@@ -64,7 +63,7 @@ const Login=()=> {
         
     </div>
     <div className="footer">
-    <button className="text-center btns font-bold" to="/register" role="button">Verify</button>
+    <div onClick={handleSubmit} className="text-center btns font-bold" to="/register" role="button">Verify</div>
     <p style={{margin:"6vh auto 14vh",
     fontSize: "22px"}} className="text-center font-light">Don't have an account yet ?<span className='login-link font-bold' onClick={handleClick}>Register here</span></p>
         </div>

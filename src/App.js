@@ -8,6 +8,7 @@ import Footer from "./components/Footer/Footer";
 import Input from "./components/Input/Input";
 import TimeTable from "./components/TimeTable/TimeTable";
 import About from "./components/About/About";
+import User from "./components/User/User";
 
 function App() {
   return (
@@ -17,6 +18,7 @@ function App() {
    <Routes>
     <Route exact path='/' element={<Home/>}/>
     <Route exact path='/about' element={<About/>}/>
+    <Route exact path='/user' element={<User/>}/>
     <Route exact path='/register' element={<Register/>}/>
     <Route exact path='/login' element={<Login/>}/>
     <Route exact path='/input' element={<Input/>}/>

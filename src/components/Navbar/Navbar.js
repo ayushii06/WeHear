@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useState } from 'react'
 import user from '../../assets/svg/user.svg'
 // import logo from '../../assets/logo.png'
 import "./Navbar.css"
@@ -6,6 +6,7 @@ import { Link } from 'react-router-dom'
 
 
 function Navbar() {
+
     return (
         <>
             <div className="navbar">
@@ -15,11 +16,12 @@ function Navbar() {
                 <ul>
                     <li><Link to="/">Home</Link></li>
                     <li><Link to="/about">About Us</Link></li>
-                    <li><Link to="/">GetStarted</Link></li>
+                    <li> {localStorage.getItem('token')?<Link to="/input">GetStarted</Link>:<Link to="/">GetStarted</Link>}</li>
                 </ul>
 
                 <div className="visible">
-                    <Link to='/register'><img className="image-svg user" src={user} alt="" /></Link></div>
+                    {localStorage.getItem('token')?<Link to='/user'><img className="image-svg user" src={user} alt="" /></Link>:<Link to='/register'><img className="image-svg user" src={user} alt="" /></Link>}
+                    </div>
 {/* <div className="media-query" id="dropdown">
             <div className="navbar-container">
             <li><Link to="/">Home</Link></li>
