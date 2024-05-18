@@ -57,10 +57,7 @@ function Register() {
             <label>Age</label>
                 <input type="number" id="number" className='form-control' value={credentials.mobile} onChange={onChange} name="mobile" placeholder="Enter your age"/>
             </div>
-            <div className="form-group">
-            <label>Grade</label>
-                <input type="password" id="password" className='form-control' value={credentials.password} onChange={onChange} name="password" placeholder="Enter your grade"/>
-            </div>
+            
             <div className="form-group">
             <label>Gender</label>
                 <input type="password" id="password" className='form-control' value={credentials.password} onChange={onChange} name="password" placeholder="Enter your gender"/>

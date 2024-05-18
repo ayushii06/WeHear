@@ -6,8 +6,8 @@ function Footer() {
   return (
     <>   
     <div className="lower-part">
-            <div className="Heading font-regular">WeManage</div>
-            <div className="para font-regular">Simplifying Your Schedule</div>
+            <div className="Heading font-regular">WeHear</div>
+            <div className="para font-regular">Prioritize your mental health</div>
       
         <p className="center font-regular">© 2024 LogicalVoids All Rights Reserved.</p>
     </div>
