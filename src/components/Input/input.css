@@ -41,3 +41,51 @@ input{
     border-radius: 3px;
     width: 39%;
 }
+
+.ques-container{
+    border-radius: 3px;
+    padding: 22px;
+    background: #004e88;
+    width: 40vw;
+    margin: 9vh auto;
+
+}
+
+.ques-container>label{
+    font-weight: 400;
+    font-size: 24px;
+}
+
+input{
+    margin: 18px 0px;
+    width: 7vw;
+    height: 4vh;
+}
+
+.ans-container{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin: 28px auto;
+
+}
+
+.ans-container>div{
+    display: flex;
+    align-items: center;
+
+}
+
+.ans-container>div>p{
+    color: white;
+    font-weight: 700;
+    font-size: 19px;
+    text-align: left;
+}
+
+.input-cont{
+    background: #ffffff;
+    margin: auto;
+    width: 42vw;
+    height: 7vh;
+    color: black;
+}
