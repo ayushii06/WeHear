@@ -1,15 +1,6 @@
 import React from 'react'
-import user from "../../assets/user-icon/user.svg"
-import arrow from "../../assets/user-icon/arrow.svg"
-import file from "../../assets/user-icon/file.svg" 
-import account from "../../assets/user-icon/account.svg"
 import '../User/User.css'
-import logout from "../../assets/user-icon/logout.svg"
-import payment from "../../assets/user-icon/payments.svg" 
-import { useEffect } from 'react'
-import {  useState } from 'react'
 import { useNavigate } from 'react-router-dom'
-
 
 function User() {
   let navigate=useNavigate();

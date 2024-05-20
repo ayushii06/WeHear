@@ -1,6 +1,6 @@
 import React,{useState} from 'react'
 import { Link } from 'react-router-dom'
-import '../Input/input.css'
+import './input.css'
 import Response from '../Response/Response';
 
 
