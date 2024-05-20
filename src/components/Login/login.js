@@ -26,16 +26,12 @@ const Login=()=> {
       
       console.log(json)
       if (json.success) {
-          //Save the auth taken and redirect
-          
           localStorage.setItem('token', json.token)
           localStorage.setItem('name', json.user.name)
           localStorage.setItem('email', json.user.email)
-        //   localStorage.setItem('password', json.user.password)
-        //   localStorage.setItem('mobile', json.user.mobile)
+          localStorage.setItem('age', json.user.age)
+          localStorage.setItem('gender', json.user.gender)
           navigate("/")
-
-
       }
       else {
           alert("Invalid Credentials")

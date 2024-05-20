@@ -11,14 +11,13 @@ import {  useState } from 'react'
 import { useNavigate } from 'react-router-dom'
 
 
-function User(props) {
+function User() {
   let navigate=useNavigate();
-  const userInitial = []
-//   const [data, setData] = useState(userInitial)
-
+ 
   let names = localStorage.getItem('name')
   let email = localStorage.getItem('email')
-  //GET ALL NOTES
+  let age = localStorage.getItem('age')
+  let gender = localStorage.getItem('gender')
  
    function handleClick(){
     localStorage.removeItem('token')
@@ -30,11 +29,11 @@ function User(props) {
   return (
     <>
         <div className="user-container">
-        
+            <p className="">Your Information</p>
        
             <div className="main-heading">
                 <div className="upper-heading">
-                    <h4 className='bold-black'>Personal Information</h4>
+                    <h4 className='bold-black'>Name</h4>
                     <h5>Edit</h5>
                 </div>
                 <input type="text" value={names}/>
@@ -48,6 +47,23 @@ function User(props) {
                 <input type="email" value={email}/>
             </div>
 
+            <div className="main-heading">
+                <div className="upper-heading">
+                    <h4 className='bold-black'>Age</h4>
+                    <h5>Edit</h5>
+                </div>
+                <input type="email" value={age}/>
+            </div>
+
+            <div className="main-heading">
+                <div className="upper-heading">
+                    <h4 className='bold-black'>Gender</h4>
+                    <h5>Edit</h5>
+                </div>
+                <input type="email" value={gender}/>
+            </div>
+            <div onClick={handleClick} className="text-center btns font-bold" to="/register" role="button">Logout</div>
+    
         </div>
    
     </>
