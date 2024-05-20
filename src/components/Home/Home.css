@@ -41,8 +41,8 @@
 }
 
 .appname{
-    font-size: 45px;
-    color: #000000;
+    font-size: 39px;
+    color: #00a2c1;
 }
 
 .about-heading {
@@ -122,31 +122,6 @@ span{
     margin: 35vh auto auto;
 }
 
-.card{
-    justify-content: center;
-    display: flex;
-    gap: 70px;
-    margin: 11vh 0px;
-}
-
-.card-container{
-    background-color: white;
-    width: 21vw;
-    height: 42vh;
-    border-radius: 2px;
-}
-
-.title{
-    font-size: 18px;
-    /* margin: auto; */
-    width: 69%;
-    color: #393D9E;
-    margin: 3vh auto;
-}
-
-.content{    margin: 7vh auto;
-    width: 82%;
-}
 
 .sign-up-header{
     margin: 20vh auto;

@@ -5,6 +5,10 @@ import logo from '../../assets/bg.jpg'
 import Footer from '../Footer/Footer'
 import { useNavigate } from 'react-router-dom'
 import wellness from '../../assets/wellness.png'
+import asses from '../../assets/Homepage/asses.jpg'
+import guidance from '../../assets/Homepage/guidance.jpg'
+import resource from '../../assets/Homepage/resource.jpg'
+import '../Response/Response.css'
 
 const Home = () => {
   let navigate = useNavigate();
@@ -52,17 +56,32 @@ const Home = () => {
     <Link  className="text-center btns font-bold" to="/input" role="button">Key Features</Link> 
     <div className="card">
       <div className="card-container">
+      <div className="right">
         <p className="title font-bold">Interactive Assessment Tools</p>
-        <p className="content font-bold">"Assess your mental well-being with our user-friendly screening tools and receive personalized insights and recommendations."</p>
+        <p className="content">"Assess your mental well-being with our user-friendly screening tools and receive personalized insights and recommendations."</p>
+      </div>
+      <img className="" src={asses} />
       </div>
       <div className="card-container">
+      <img className="" src={resource} />
+      <div className="right">
         <p className="title font-bold">Resources and Support</p>
-        <p className="content font-bold">"Access a wealth of resources, including educational materials, coping strategies, and community support networks, to help you navigate life's challenges."</p>
+        <p className="content">"Access a wealth of resources, including educational materials, coping strategies, and community support networks, to help you navigate life's challenges."</p>
       </div>
+      
+  
+      </div>
+
       <div className="card-container">
+    
+      <div className="right">
         <p className="title font-bold">Professional Guidance</p>
-        <p className="content font-bold">"Connect with licensed therapists, counselors, and mental health professionals for personalized support and guidance."</p>
+        <p className="content">"Connect with licensed therapists, counselors, and mental health professionals for personalized support and guidance."</p>
+        </div>
+        <img className="" src={guidance} />
       </div>
+
+     
     </div> 
     <div className="sign-up-header">Ready to prioritize your mental well-being? Sign up for free and start your journey with WeHear today</div>
   

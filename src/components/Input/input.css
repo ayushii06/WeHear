@@ -46,8 +46,8 @@ input{
     border-radius: 3px;
     padding: 22px;
     background: #004e88;
-    width: 40vw;
-    margin: 9vh auto;
+    width: 60vw;
+    margin: 3vh auto;
 
 }
 
@@ -66,6 +66,7 @@ input{
     display: grid;
     grid-template-columns: 1fr 1fr;
     margin: 28px auto;
+    width: 40vw;
 
 }
 

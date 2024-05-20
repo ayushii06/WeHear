@@ -1,30 +1,56 @@
 /* response.css */
 
 .response-container {
-    width: 50%;
-    margin: 0 auto;
-    font-family: Arial, sans-serif;
+    width: 85%;
+    margin: 0vh auto;
     padding: 20px;
-    border: 1px solid #ccc;
-    background-color: #f9f9f9;
+    text-align: center;
+  }
+
+  .response-container>h1{
+    font-weight: 700;
+    color: #000000;
+    font-size: 40px;
+    margin: 0vh auto 12vh;
   }
   
   h1, h2 {
     color: #333;
   }
-  
-  .result-summary {
-    margin-bottom: 20px;
+
+  .low{
+    color: green;
+  }
+
+  .moderate{
+    color: orange;
+  }
+
+  .high{
+    color: red;
   }
   
-  .result-summary p {
-    font-size: 1.2em;
+  .result-summary {   
+     line-height: 1.86;
+  }
+  
+  .result-summary>p {
+    font-weight: 700;
+    font-size: 2.1em;
   }
   
   .resources {
-    margin-top: 20px;
+    padding: 17px;
+    margin: 20px auto;
   }
   
+  .resources>h2{
+    margin: 6vh auto 14vh;
+    font-weight: 800;
+    color: #0073b0;
+    font-size: 39px;
+  }
+
   .resources ul {
     list-style-type: disc;
     margin-left: 20px;
@@ -34,3 +60,37 @@
     margin-bottom: 10px;
   }
   
+  .card{
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    gap: 70px;
+    margin: 11vh auto;
+}
+
+.card-container{
+  display: flex;
+  align-items: center;
+  background-color: white;
+  width: 81vw;
+  height: 50vh;
+  border-radius: 2px;
+}
+
+.card-container>img{
+    width: 23vw;
+}
+.title{
+    font-size: 39px;
+    width: 69%;
+    color: #1B98AC;
+    margin: 3vh auto;
+}
+
+.content{
+  font-weight: 400;
+  margin: 3vh auto;
+  width: 88%;
+  font-size: 20px;
+}
