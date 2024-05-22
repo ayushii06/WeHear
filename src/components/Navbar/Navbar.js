@@ -16,7 +16,7 @@ function Navbar() {
                 <ul>
                     <li><Link to="/">Home</Link></li>
                     <li><Link to="/about">About Us</Link></li>
-                    <li> {localStorage.getItem('token')?<Link to="/input">GetStarted</Link>:<Link to="/">GetStarted</Link>}</li>
+                    <li> <Link to="/input">GetStarted</Link></li>
                 </ul>
 
                 <div className="visible">
