@@ -16,7 +16,7 @@ function Register() {
     }
   const handleSubmit = async(e)=>{
     e.preventDefault();
-    const response = await fetch("https://project-we-hear-backend-6m4y0wyvw-ayushii06s-projects.vercel.app/api/v1/user/signup", {
+    const response = await fetch("https://project-we-hear-backend-mt731qoyb-ayushii06s-projects.vercel.app/api/v1/user/signup", {
             method: "POST",
             headers: {
                 "Content-Type": "application/json",
