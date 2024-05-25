@@ -1,70 +1,36 @@
-# Getting Started with Create React App
+## Inspiration
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Mental health is a crucial aspect of overall well-being, yet many people struggle to access timely support and resources. According to the World Health Organization, depression affects **more than 264 million people worldwide, and anxiety disorders affect over 284 million people**. The COVID-19 pandemic has exacerbated these issues, leading to a significant increase in mental health challenges across all age groups. Inspired by these statistics and **the urgent need for accessible, proactive solutions, I created WeHear to provide continuous mental health surveillance, assessment, and support for individuals of all ages.**
 
-## Available Scripts
+## What it does
 
-In the project directory, you can run:
+WeHear is a _comprehensive web application designed to monitor and assess mental health across all age groups_. It features **interactive quizzes** to evaluate mental well-being, tracks changes over time, and **provides personalized feedback and resources.** The app identifies potential mental health issues early and offers coping strategies, educational materials, and recommendations for professional support when necessary.
 
-### `npm start`
+## How I built it
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+**Frontend**: Developed using React.js for a responsive and intuitive user interface.
+**Backend**: Built with Nodejs and Express to handle data processing and user authentication.
+**Database**: Implemented with MongoDb for secure storage and management of user data.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+## Try It Out Link
 
-### `npm test`
+[WEBSITE](https://project-wehear-backend-r9y3.onrender.com)
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+[FRONTED](https://github.com/ayushii06/WeHear)
 
-### `npm run build`
+[BACKEND](https://github.com/ayushii06/Project-WeHear--backend)
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+## Challenges we ran into
+Designing _quizzes that are engaging and effective_ in assessing mental health for different age groups.
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+## Accomplishments that we're proud of
+Building the whole website and deploying it was a great process indeed!
 
-### `npm run eject`
+## What we learned
+The importance of a user-centric design in creating applications for diverse age groups, ensuring the interface is engaging and easy to navigate.
+The critical role of data privacy and ethical considerations when handling sensitive information.
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+## What's next for WeHear
+Machine Learning: I will then try to integrate machine learning models for more accurate assessments and personalized feedback.
+Community Integration: Building a community platform for peer support and shared experiences among users.
