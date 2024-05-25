@@ -65,16 +65,16 @@ function Input() {
     <label>How have you been feeling over the past week?</label><br />
     <div className="ans-container">
         <div className="">
-          <input onChange={handleChange} type='checkbox' name="mood" value="1"  /><p className="">Never</p> <br />
+          <input onChange={handleChange} type='checkbox' name="mood" value="1"  /><p className="">Very Happy</p> <br />
           </div>
           <div className="">
-          <input onChange={handleChange} type='checkbox' name="mood" value="2"  /><p className="">Never</p> <br />
+          <input onChange={handleChange} type='checkbox' name="mood" value="2"  /><p className="">Happy</p> <br />
           </div>
           <div className="">
-          <input onChange={handleChange} type='checkbox' name="mood" value="3"  /><p className="">Never</p> <br />
+          <input onChange={handleChange} type='checkbox' name="mood" value="3"  /><p className="">Sad</p> <br />
           </div>
           <div className="">
-          <input onChange={handleChange} type='checkbox' name="mood" value="4"  /><p className="">Never</p> <br />
+          <input onChange={handleChange} type='checkbox' name="mood" value="4"  /><p className="">Very Sad</p> <br />
           </div>
         </div>
           </div>
